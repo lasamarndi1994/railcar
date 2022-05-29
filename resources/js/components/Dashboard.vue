@@ -133,7 +133,7 @@ export default ({
         logout(){
             axios.post('/api/logout').then((response)=>{
                 if(response.data.status == true){
-                    this.$router.push('/login')
+                    this.$router.push('/');
                 }
             })
         }

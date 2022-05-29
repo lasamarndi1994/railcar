@@ -19844,7 +19844,7 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.post('/api/logout').then(function (response) {
         if (response.data.status == true) {
-          _this3.$router.push('/login');
+          _this3.$router.push('/');
         }
       });
     }
@@ -20025,7 +20025,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.get('/sanctum/csrf-cookie').then(function (response) {
         axios.post('/api/register', _this.form).then(function (response) {
           if (response.data.status == true) {
-            window.location.href = "/login";
+            window.location.href = "/";
           }
         })["catch"](function (error) {
           return _this.errors = error.response.data.errors;
@@ -20661,7 +20661,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.password]]), $data.errors.password ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.password[0]), 1
   /* TEXT */
   )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/login",
+    to: "/",
     "class": "nav-item nav-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -20765,7 +20765,7 @@ var routes = [{
   component: _components_auth_Register__WEBPACK_IMPORTED_MODULE_1__["default"]
 }, {
   name: 'login',
-  path: '/login',
+  path: '/',
   component: _components_auth_Login__WEBPACK_IMPORTED_MODULE_2__["default"]
 }];
 var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.createRouter)({

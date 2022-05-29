@@ -20,7 +20,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary mt-2">Submit</button>
-         <router-link to="/login" class="nav-item nav-link">login
+         <router-link to="/" class="nav-item nav-link">login
         </router-link>
 
     </form>
@@ -48,7 +48,7 @@ export default {
                     axios.post('/api/register',this.form)
                         .then(response => {
                             if (response.data.status == true) {
-                                window.location.href = "/login"
+                                window.location.href = "/"
                             }
                         }).catch(error => (this.errors = error.response.data.errors));
                 })
